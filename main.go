@@ -4,6 +4,8 @@ import (
 	"encoding/json"
 	"io/ioutil"
 	"log"
+
+	"github.com/AlastorTh/ioutil_ex/models"
 )
 
 func main() {
@@ -35,14 +37,14 @@ func getContent(path string) string {
 	return string(output)
 }
 
-func getData() DataCont {
+func getData() models.DataCont {
 	res, err := ioutil.ReadFile("./data/data.json")
 
 	if err != nil {
 		log.Fatalln(err)
 	}
 
-	var container DataCont
+	var container models.DataCont
 
 	err = json.Unmarshal(res, &container)
 
