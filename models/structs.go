@@ -1,4 +1,4 @@
-package main
+package models
 
 // Data that we take from json file
 type Data struct {

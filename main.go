@@ -16,7 +16,7 @@ func main() {
 	writeF(res)
 }
 
-func writeF(cont DataCont) {
+func writeF(cont models.DataCont) {
 	res, err := json.Marshal(cont)
 
 	if err != nil {
