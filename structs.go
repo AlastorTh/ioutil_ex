@@ -5,6 +5,7 @@ type Data struct {
 	Title       string
 	Link        string
 	Description string
+	Content     string
 }
 
 // DataCont ...
